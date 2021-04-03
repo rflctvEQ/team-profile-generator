@@ -85,8 +85,6 @@ const internQuestions = [
     }
 ];
 
-
-
 // function to initialize app 
 const startManagerQs = function() {
     inquirer.prompt(managerQuestions)
@@ -138,7 +136,9 @@ const startAddEmployeeQ = function() {
                     })
                     .catch((err) => console.log(err));
             } else {
-                console.log(html(teamArray));
+                // console.log(html(teamArray));
+                fs.writeFile('./dist/my-team.html', html(teamArray), (err) =>
+                err ? console.log(err) : console.log('Successfully created my-team.html.'));
             }
         })
         .catch((err) => console.log(err));
