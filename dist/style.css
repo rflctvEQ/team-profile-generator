@@ -1,0 +1,64 @@
+:root {
+    --background: #222;
+    --text: #ddd;
+    --border: #777;
+    --purple: rgb(127, 0, 201);
+}
+
+body {
+    color: var(--text);
+    background-color: var(--background);
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    border-bottom: 5px double var(--purple);
+}
+
+.my {
+    border-bottom: 8px dotted var(--text);
+    padding-bottom: 5px;
+}
+
+.team {
+    border-bottom: 8px solid var(--purple);
+    padding-bottom: 5px;
+}
+
+main {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-top: 5px solid var(--purple);
+    border-bottom: 5px solid var(--purple);
+    margin-bottom: 50px;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+div {
+    color: var(--text) !important;
+    background-color: var(--background) !important;
+}
+
+.employeeCard {
+    border: 2px solid var(--border);
+    border-radius: 5px;
+    /* margin: 10px 10px 10px 0; */
+}
+
+ul {
+    border-radius: 5px !important;
+}
+
+li {
+    background-color: var(--purple) !important;
+    color: var(--text) !important;
+    border-bottom: 2px solid var(--border) !important;
+}
