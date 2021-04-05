@@ -58,7 +58,7 @@ const generateTeamMembers = function(teamList) {
     const renderedHtml = []; 
 
     teamList.forEach(employee => {
-        console.log(employee);
+        // console.log(employee);
         switch (employee.getRole()) {
             case 'Manager':
                 renderedHtml.push(generateManager(employee));
