@@ -3,7 +3,7 @@ const generateTeamMembers = function(teamList) {
     // console.log(teamList);
     const generateManager = function(manager) {
         // console.log(manager);
-        return `<div class="card col-4 employeeCard">
+        return `<div class="card col-12 employeeCard">
     <div class="card-header">
         <h2>${manager.getName()}</h2>
         <h3>${manager.getRole()}</h3>
@@ -15,12 +15,13 @@ const generateTeamMembers = function(teamList) {
             <li class="list-group-item">Office Number: ${manager.getOfficeNumber()}</li>
             </ul>                        
     </div>
-</div>`
+</div>
+`
     }
 
     const generateEngineer = function(engineer) {
         // console.log(engineer);
-        return `<div class="card col-4 employeeCard">
+        return `<div class="card col-sm-12 col-lg-4 employeeCard">
     <div class="card-header">
         <h2>${engineer.getName()}</h2>
         <h3>${engineer.getRole()}</h3>
@@ -32,12 +33,13 @@ const generateTeamMembers = function(teamList) {
             <li class="list-group-item">GitHub: ${engineer.getGithub()}</li>
             </ul>                        
     </div>
-</div>`
+</div>
+`
     }
 
     const generateIntern = function(intern) {
         // console.log(intern);
-        return `<div class="card col-4 employeeCard">
+        return `<div class="card col-sm-12 col-lg-4 employeeCard">
     <div class="card-header">
         <h2>${intern.getName()}</h2>
         <h3>${intern.getRole()}</h3>
@@ -49,7 +51,8 @@ const generateTeamMembers = function(teamList) {
             <li class="list-group-item">School: ${intern.getSchool()}</li>
             </ul>                        
     </div>
-</div>`
+</div>
+`
     }
 
     const renderedHtml = []; 
